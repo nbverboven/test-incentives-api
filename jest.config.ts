@@ -10,6 +10,8 @@ const config: Config = {
     "json"
   ],
 
+  testMatch: ["**/*.test.ts"],
+
   testPathIgnorePatterns: [
     "/node_modules"
   ]

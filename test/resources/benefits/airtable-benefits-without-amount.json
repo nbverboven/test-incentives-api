@@ -1,0 +1,37 @@
+[
+  {
+    "id": "rec3vhFeVPwRCK1J1",
+    "createdTime": "2023-05-23T22:31:15.000Z",
+    "ID": "Bayren SF/0 - CAS Test Out",
+    "Descriptive Name": "Combustion Appliance Safety (CAS) test-out ",
+    "Short Name": "0 - CAS Test Out",
+    "Rules": [
+      "reckRyi6RNVlwyJO6"
+    ],
+    "Logic": "All",
+    "Benefit Cap": -1,
+    "Minimum": -1,
+    "Amount Unit": "$",
+    "Program": [
+      "recGGBLmsaKmtkjpm"
+    ],
+    "Upgrade Measures": [
+      "recxEY2BDHxlyzBIz"
+    ],
+    "Display Funding": "$150",
+    ".incentivesProgramsRollup": [],
+    "Program Source Link (from Program)": [
+      "https://www.bayren.org/rebates-financing/single-family-homeowners"
+    ],
+    "Amount Range Reason": [
+      "Not Applicable"
+    ],
+    "UUID": "56b81a89-9b32-45e1-8423-d0e14d78bb55",
+    "Incentive UUID": "f8d8c3ba-f476-4ed4-b12d-b477444045b8",
+    "Benefit Type": "Rebate",
+    "Ingestion Status (from Program)": [
+      "Eligibility Modeled"
+    ],
+    "Created Date": "2023-05-23"
+  }
+]

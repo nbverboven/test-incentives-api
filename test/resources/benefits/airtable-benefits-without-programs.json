@@ -1,0 +1,73 @@
+[
+  {
+    "id": "recDlXPkqaVojL9YO",
+    "createdTime": "2023-05-22T19:17:33.000Z",
+    "ID": "SGIP/Equity Energy Storage",
+    "Short Name": "Equity Energy Storage",
+    "Logic": "All",
+    "Amount": 850,
+    "Benefit Cap": -1,
+    "Minimum": -1,
+    "Amount Unit": "$",
+    "Incentives": [
+      "recqUmuHI3TJsOoYP"
+    ],
+    "Upgrade Measures": [
+      "recgHzDTxtfooubps"
+    ],
+    "Display Funding": "$850",
+    ".incentivesProgramsRollup": [
+      "SGIP"
+    ],
+    "Program Source Link (from Program)": [
+      "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/self-generation-incentive-program"
+    ],
+    "Amount Range Reason": [
+      "Not Applicable"
+    ],
+    "UUID": "3d041f5f-634b-421e-8ad9-bb0714ae7dd8",
+    "Incentive UUID": "ec142ce4-fd98-4b4c-973d-f788c791046c",
+    "Normalized Unit": "Per kWh",
+    "Benefit Type": "Rebate",
+    "Ingestion Status (from Program)": [
+      "Eligibility Modeled"
+    ],
+    "Created Date": "2023-05-22"
+  },
+  {
+    "id": "recgnoLtGVFDnqXfG",
+    "createdTime": "2023-05-22T19:17:33.000Z",
+    "ID": "SGIP/Resiliency Energy Storage",
+    "Short Name": "Resiliency Energy Storage",
+    "Logic": "All",
+    "Amount": 1000,
+    "Benefit Cap": -1,
+    "Minimum": -1,
+    "Amount Unit": "$",
+    "Incentives": [
+      "recNztGg2LBi2oDz0"
+    ],
+    "Program": [],
+    "Upgrade Measures": [
+      "recgHzDTxtfooubps"
+    ],
+    "Display Funding": "$1000",
+    ".incentivesProgramsRollup": [
+      "SGIP"
+    ],
+    "Program Source Link (from Program)": [
+      "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/self-generation-incentive-program"
+    ],
+    "Amount Range Reason": [
+      "Not Applicable"
+    ],
+    "UUID": "755825a3-1e73-45a4-88ae-81c4233b4ff5",
+    "Incentive UUID": "2c944e54-e4b5-47c5-b5d6-81aad3006e71",
+    "Normalized Unit": "Per kWh",
+    "Benefit Type": "Rebate",
+    "Ingestion Status (from Program)": [
+      "Eligibility Modeled"
+    ],
+    "Created Date": "2023-05-22"
+  }
+]

@@ -1,5 +1,5 @@
-import {ApiPropertyType, Program} from "../utils/types";
-import {AirtableProgram, AirtablePropertyType, ProgramSchema} from "./types";
+import {ApiPropertyType, Benefit, Program} from "../utils/types";
+import {AirtableBenefit, AirtableProgram, AirtablePropertyType, BenefitSchema, ProgramSchema} from "./types";
 
 const mapAirtablePropertyType = (type: AirtablePropertyType): ApiPropertyType => {
     switch (type) {
@@ -29,6 +29,27 @@ export const mapAirtablePrograms = (programs: AirtableProgram[]): Program[] => {
             id: p.UUID,
             name: p["Program Name"],
             cap: (p["Program Cap"] && p["Program Cap"] >= 0) ? p["Program Cap"] : null,
-            propertyType: p["Availability: Property Type"]?.map(mapAirtablePropertyType),
+            propertyType: p["Availability: Property Type"]!.map(mapAirtablePropertyType),
         } as Program));
+};
+
+export const mapAirtableBenefits = (benefits: AirtableBenefit[]): Benefit[] => {
+    return benefits
+        .map(r => BenefitSchema.parse({
+            id: r.id,
+            UUID: r.UUID,
+            ID: r.ID,
+            Program: r.Program,
+            Amount: r.Amount,
+            // "Benefit Type": r["Benefit Type"],
+        }))
+        .filter(b => b.Program && b.Program.length > 0 && b.UUID /* && b["Benefit Type"] */ && b.Amount)
+        .map(b => ({
+            id: b.UUID,
+            name: b.ID,
+            // type: b["Benefit Type"],
+            programId: b.Program![0],
+            minAmount: (b.Minimum && b.Minimum >= 0) ? b.Minimum : null,
+            maxAmount: b.Amount,
+        } as Benefit));
 };

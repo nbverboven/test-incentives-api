@@ -12,17 +12,17 @@ export type ApiPropertyType = "single_family" | "multifamily" | "commercial";
 export interface Program {
     id: string;
     name: string;
-    cap?: number;
+    cap: number | null;
     propertyType: ApiPropertyType[];
 }
 
 export interface Benefit {
     id: string;
     name: string;
-    type: string;
-    minAmount?: number;
+    // type: ApiBenefitType;
+    minAmount: number | null;
     maxAmount: number;
-    program: Program;
+    programId: string;
 }
 
 export interface ApiRequest {
@@ -44,7 +44,7 @@ export interface ApiResponse {
         name: string;
         program_cap: number | null;
     };
-    benefit_type: ApiBenefitType;
+    // benefit_type: ApiBenefitType;
     min_amount: number | null;
     max_amount: number;
 }

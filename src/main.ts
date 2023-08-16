@@ -1,8 +1,7 @@
 import express from 'express';
 import axios from 'axios';
 import {Benefit, Program} from "./utils/types";
-import {mapAirtablePrograms} from "./etl/mappers";
-import {AirtableBenefit} from "./etl/types";
+import {mapAirtableBenefits, mapAirtablePrograms} from "./etl/mappers";
 
 /*
   - fetch programs
@@ -32,32 +31,7 @@ const port = 3000;
     const programs = await axios.get(PROGRAMS_URL).then(r => mapAirtablePrograms(r.data));
         // .reduce((acc, curr) => ({...acc, [curr.id]: curr}), {} as ProgramsMap);
 
-    const airtableBenefits: AirtableBenefit[] = await axios.get(BENEFITS_URL).then(r => r.data);
-    // benefits = airtableBenefits
-    //     .map(r => BenefitSchema.parse({
-    //         id: r.id,
-    //         UUID: r.UUID,
-    //         ID: r.ID,
-    //         Program: r.Program,
-    //         "Benefit Type": r["Benefit Type"],
-    //     }))
-    //     .filter(b => b.Program && b.Program.length > 0 && b["Benefit Type"] && b.Amount)
-    //     .map(b => {
-    //         const p = programs[b.Program!.at(0).toString()];
-    //         return {
-    //             id: b.UUID,
-    //             name: b.ID,
-    //             type: b["Benefit Type"],
-    //             program: {
-    //                 id: p.id,
-    //                 name: p.name,
-    //                 cap: p.cap,
-    //                 propertyType: p.propertyType,
-    //             },
-    //             minAmount: (b.Minimum && b.Minimum >= 0) ? b.Minimum : null,
-    //             maxAmount: b.Amount,
-    //         } as Benefit;
-    //     })
+    const benefits = await axios.get(BENEFITS_URL).then(r => mapAirtableBenefits(r.data));
     //     .reduce((acc, curr) => ({...acc, [curr.id]: curr}), {} as BenefitsMap);
 
     // Object.keys(benefitsMap)
@@ -68,8 +42,6 @@ const port = 3000;
     //
     //     }
     //   });
-
-    //const airtableProgram = AirtableProgramSchema.parse({});
 
     createApp().listen(port, () => {
         console.log(`Starting app listening on port ${port}`);
