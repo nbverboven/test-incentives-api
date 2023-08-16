@@ -9,6 +9,22 @@ export enum HttpStatus {
 
 export type ApiPropertyType = "single_family" | "multifamily" | "commercial";
 
+export interface Program {
+    id: string;
+    name: string;
+    cap?: number;
+    propertyType: ApiPropertyType[];
+}
+
+export interface Benefit {
+    id: string;
+    name: string;
+    type: string;
+    minAmount?: number;
+    maxAmount: number;
+    program: Program;
+}
+
 export interface ApiRequest {
     property_type: ApiPropertyType;
 }
