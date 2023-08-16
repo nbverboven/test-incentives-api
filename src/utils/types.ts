@@ -7,10 +7,7 @@ export enum HttpStatus {
     NOT_FOUND = 404,
 }
 
-export type ApiPropertyType =
-    "single_family"
-    | "multifamily"
-    | "commercial";
+export type ApiPropertyType = "single_family" | "multifamily" | "commercial";
 
 export interface ApiRequest {
     property_type: ApiPropertyType;

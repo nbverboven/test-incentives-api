@@ -1,0 +1,178 @@
+[
+  {
+    "id": "recGvYs2YHnRZ4Qj0",
+    "createdTime": "2023-07-03T19:44:45.000Z",
+    "Created": "2023-07-03",
+    "Assignee": {
+      "id": "usrpvesMPv8VZlfGk",
+      "email": "simi@eli.build",
+      "name": "Simi Ibikunle"
+    },
+    "Program Name": "Electrify Riverside Program",
+    "Description": "Get up to a $1,000 rebate for a used Battery Electric or Plug-In Hybrid vehicle if purchased or leased after January 1, 2023. Qualified low-income customers enrolled in RPU's SHARE program are eligible to receive an increased rebate of up to $2500!",
+    "Funder": [
+      "rec95f5Sp9s8imOnL"
+    ],
+    "Funding Status": "Continuous",
+    "Program Administrator": [
+      "rec95f5Sp9s8imOnL"
+    ],
+    "Program Cap": -1,
+    "Program Source URL": "https://www.riversideca.gov/utilities/residents/rebates/electrify-riverside",
+    "Ingestion Status": "Availability Modeled",
+    "Customer Overlap (Count)": 0,
+    "Ingestion Priority": 0,
+    "Benefits": [
+      "recnygQnFMczeOX48",
+      "recQQu0wWlBdGIDmQ"
+    ],
+    "Benefit Count": 2,
+    "Benefit Type": "Rebate",
+    "Area - Prioritization Only": [
+      "recHXOtDahOlDR2oI"
+    ],
+    "Availability: Property Type": [
+      "Single Family",
+      "Multifamily"
+    ],
+    "Income Restrictions": [
+      "Benefit Amount"
+    ],
+    "Publish": true,
+    "UUID": "1b560e4a-7077-4bec-817f-be213e6a247f",
+    "Area": [
+      "rec1dcyCKcECSygba"
+    ],
+    "Utility Customer Requirement": [
+      "rec95f5Sp9s8imOnL"
+    ],
+    "Customers (from Area - Prioritization Only)": [
+      "recRfpBLCFdE7JLd4",
+      "recq2Dst1mgksTzqj",
+      "recmaatV23rfA42Ok",
+      "recFTptCyG26rrjKl"
+    ],
+    "ID": "California/RiversideCounty/Riverside_ElectrifyRiversideProgram"
+  },
+  {
+    "id": "rec8SNP1Btw4OkvfV",
+    "createdTime": "2023-06-02T20:16:16.000Z",
+    "Created": "2023-06-02",
+    "Assignee": {
+      "id": "usrueUvByfYXCW6Ox",
+      "email": "faandrade@gmail.com",
+      "name": "Frederico A. Andrade"
+    },
+    "Program Name": "Electrify Your Home",
+    "Description": "Electrify Your Home is a 3CE partnership with TECH Clean California. This partnership provides cash incentives to contractors for qualifying heat pump projects in the 3CE service area.\n\nCash incentives are available when switching gas-powered water heaters and HVAC equipment to all-electric versions. Incentives are available to help cover appliance costs and costs related to electric panel upgrades or replacement.\nRead more at https://3cenergy.org/rebates/electrify-your-home/",
+    "Incentives": [
+      "rectLskHyunlfxtr4",
+      "recTU6K6P3sbzYM8u",
+      "recydOw57ScRqD5Wl",
+      "rec5ZAS8uYP3kANfX",
+      "rechsh7UzEQcDOz4A",
+      "recdVE0QtruDErjy0",
+      "recTvnToyYbTqgrob",
+      "rec1w4eLBxwvNcAXP"
+    ],
+    "Funder": [
+      "recvwxomiHfdTAr9t"
+    ],
+    "Program Cap": 1000,
+    "Program Source URL": "https://3cenergy.org/rebates/electrify-your-home/",
+    "Upgrade Measures - Prioritization Only": [
+      "recEMW3KiXMKcsBes",
+      "recEZJAoJvbc4NoXL",
+      "recZVdTFY2xDZrdYe",
+      "recQ0v5ioeAVuPCvD"
+    ],
+    "Ingestion Status": "Eligibility Modeled",
+    "Customer Interest (Overlap)": [
+      "recmaatV23rfA42Ok",
+      "recRfpBLCFdE7JLd4",
+      "recq2Dst1mgksTzqj"
+    ],
+    "Ingestion Due Date": "2023-05-31",
+    "Customers (from Upgrade Measures)": [
+      "recq2Dst1mgksTzqj",
+      "rec6mU7dmw3caYav5",
+      "recFTptCyG26rrjKl",
+      "recmaatV23rfA42Ok",
+      "recRfpBLCFdE7JLd4",
+      "recFTptCyG26rrjKl",
+      "recmaatV23rfA42Ok",
+      "recRfpBLCFdE7JLd4",
+      "recmaatV23rfA42Ok",
+      "recmaatV23rfA42Ok"
+    ],
+    "Customer Overlap (Count)": 3,
+    "Strategic Value (from Customer Interest (Overlap))": [
+      2,
+      5,
+      4
+    ],
+    "Customer Strategic Value Average": 3.6666666666666665,
+    "Ingestion Priority": 6.666666666666666,
+    "Minimum Ingestion Level (MIL) for Interested Customers": [
+      "Eligibility",
+      "Eligibility"
+    ],
+    "Policies": [
+      "recWbcYyAcZrht9lB"
+    ],
+    "Benefits": [
+      "rectrWegGbkBNwYsg",
+      "recLnsgVsgHTXClrp",
+      "rec41FWfAiiuJELo2",
+      "recTmLoZfA70Cccdg",
+      "rec66kkmDR6OUWk3u",
+      "recdegu7hPA9IXEI4",
+      "recsFCrecRCHIfm3h",
+      "recGXthjeqSf3WmH5",
+      "recq09GWpCSFMeGVQ",
+      "recDjkwrFgREKjaiD",
+      "recXJeHYAyYysBca7",
+      "recm0fI64Z6zsC6Ag",
+      "recVdZ6etSwrR0sET",
+      "recjVsRh0NHdPUvCW",
+      "reclEHRfBviToBHeG",
+      "rec5PmIj904Q3PLXU",
+      "recxiXZJOSVuvhkuN",
+      "recsPZsRXYNHRjoLQ",
+      "reckuaM0GVO6amZgZ",
+      "recUyIZXvZGVIv84M",
+      "recdAQNTWNQbTPSIi",
+      "recpEL9lMg9jyRPAg",
+      "recunNZwBYuS3b8d5",
+      "reckYPXdRxhsLZPcJ",
+      "recWeNNVwdO7B5AYn",
+      "recHrQ02iZ67b5JSK",
+      "recg2VNbAfqmWrFa0",
+      "recygKzBVCyXPmAvx",
+      "recW4LTBW5z1FbHdn",
+      "recf9t3MODSGgPWnq",
+      "rec0gPI05nRYQzMKm"
+    ],
+    "Benefit Count": 31,
+    "Benefit Type": "Rebate",
+    "Area - Prioritization Only": [
+      "recHXOtDahOlDR2oI"
+    ],
+    "Availability: Property Type": [
+      "Multifamily",
+      "Single Family"
+    ],
+    "Publish": true,
+    "UUID": "88a4feee-64c3-4d5f-97de-fc440d48421e",
+    "Area": [
+      "recHXOtDahOlDR2oI"
+    ],
+    "Customers (from Area - Prioritization Only)": [
+      "recRfpBLCFdE7JLd4",
+      "recq2Dst1mgksTzqj",
+      "recmaatV23rfA42Ok",
+      "recFTptCyG26rrjKl"
+    ],
+    "ID": "California_ElectrifyYourHome"
+  }
+]
