@@ -1,6 +1,6 @@
 import express from 'express';
-import {Benefit, Program} from "./utils/types";
 import {fetchBenefits, fetchPrograms} from "./api/requests";
+import IncentivesService from "./services/incentives";
 
 /*
   - fetch programs
@@ -9,17 +9,10 @@ import {fetchBenefits, fetchPrograms} from "./api/requests";
   - make the endpont query the model
 */
 
-type ProgramsMap = { [id: string]: Program };
-type BenefitsMap = { [id: string]: Benefit };
-
-const buildI
-
 export const createApp = async () => {
     const programs = await fetchPrograms();
-    const programsMap = programs.reduce((acc, curr) => ({...acc, [curr.id]: curr}), {} as ProgramsMap);
-
     const benefits = await fetchBenefits();
-    //     .reduce((acc, curr) => ({...acc, [curr.id]: curr}), {} as BenefitsMap);
+    const service = new IncentivesService(programs, benefits);
 
     return express()
         .use(express.json())

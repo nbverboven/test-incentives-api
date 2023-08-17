@@ -4,7 +4,7 @@ const loadPrograms = (filename: string) => require(`../resources/programs/${file
 
 const loadBenefits = (filename: string) => require(`../resources/benefits/${filename}`);
 
-describe("Airtable mappers", () => {
+describe("Airtable mappers tests", () => {
     describe('Program mapper', () => {
         it('should ignore unpublished programs', () => {
             const unpublishedPrograms = loadPrograms('airtable-programs-unpublished.json');
