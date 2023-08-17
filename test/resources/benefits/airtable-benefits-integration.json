@@ -1,0 +1,99 @@
+[
+  {
+    "id": "recNvJ1WS88ivU1OS",
+    "createdTime": "2023-06-08T17:37:56.000Z",
+    "ID": "Healthy Homes Program - Alaska/Electrical Panel Upgrade",
+    "Short Name": "Electrical Panel Upgrade",
+    "Logic": "All",
+    "Amount": 100,
+    "Benefit Cap": -1,
+    "Minimum": -1,
+    "Amount Unit": "%",
+    "Program": [
+      "recrnzgP4QenhOFDB"
+    ],
+    "Upgrade Measures": [
+      "recZVdTFY2xDZrdYe",
+      "recQ0v5ioeAVuPCvD"
+    ],
+    "Display Funding": "100%",
+    ".incentivesProgramsRollup": [],
+    "Program Source Link (from Program)": [
+      "https://akheatsmart.org/healthy-homes/"
+    ],
+    "Amount Range Reason": [
+      "Not Applicable"
+    ],
+    "UUID": "3c635b44-8970-4639-842f-3ada20cbc03c",
+    "Incentive UUID": "ae96cedb-5024-4aa8-8790-ac0048e06640",
+    "Source Text": "Electrical panel and service upgrades",
+    "Ingestion Status (from Program)": [
+      "Availability Modeled"
+    ],
+    "Created Date": "2023-06-08"
+  },
+  {
+    "id": "recb4jg1Uwh1E3mjr",
+    "createdTime": "2023-06-22T15:15:09.000Z",
+    "ID": "Healthy Homes Program - Alaska/Weatherization",
+    "Short Name": "Weatherization",
+    "Logic": "All",
+    "Amount": 100,
+    "Benefit Cap": -1,
+    "Minimum": -1,
+    "Amount Unit": "%",
+    "Program": [
+      "recrnzgP4QenhOFDB"
+    ],
+    "Upgrade Measures": [
+      "recFFZeliq5i0b6Km"
+    ],
+    "Display Funding": "100%",
+    ".incentivesProgramsRollup": [],
+    "Program Source Link (from Program)": [
+      "https://akheatsmart.org/healthy-homes/"
+    ],
+    "Amount Range Reason": [
+      "Not Applicable"
+    ],
+    "UUID": "fd0c55de-e965-4f65-8135-0bacef57818b",
+    "Incentive UUID": "f81fe5c4-6d54-4b6b-9d9b-df046b0ad79b",
+    "Source Text": "Improve and upgrade home heating and lower home heating costs\nImprove home heat retention through air sealing, crawlspace and attic insulation, and proper ventilation\nAddress issues of excessive moisture, mold, and mildew",
+    "Ingestion Status (from Program)": [
+      "Availability Modeled"
+    ],
+    "Created Date": "2023-06-22"
+  },
+  {
+    "id": "recGCaWFpnCDrdkzq",
+    "createdTime": "2023-06-22T15:16:05.000Z",
+    "ID": "Healthy Homes Program - Alaska/Air Quality Improvements",
+    "Short Name": "Air Quality Improvements",
+    "Logic": "All",
+    "Amount": 100,
+    "Benefit Cap": -1,
+    "Minimum": -1,
+    "Amount Unit": "%",
+    "Program": [
+      "recrnzgP4QenhOFDB"
+    ],
+    "Upgrade Measures": [
+      "recOK8Oc23ZfUPjyw"
+    ],
+    "Display Funding": "100%",
+    ".incentivesProgramsRollup": [],
+    "Program Source Link (from Program)": [
+      "https://akheatsmart.org/healthy-homes/"
+    ],
+    "Amount Range Reason": [
+      "Not Applicable"
+    ],
+    "UUID": "3fd68237-2921-447e-b7a7-9181e6747157",
+    "Incentive UUID": "8f8cb855-e112-49ff-a1b1-5703fcd73731",
+    "Source Text": "Reduce dependence and exposure to fossil fuels, carbon monoxide, and reduce the risk of fuel spills and contamination\nEnsure that basic health hazards and safety concerns are eliminated",
+    "Ingestion Status (from Program)": [
+      "Availability Modeled"
+    ],
+    "Created Date": "2023-06-22"
+  }
+]

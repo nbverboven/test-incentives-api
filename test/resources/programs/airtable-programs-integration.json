@@ -1,0 +1,78 @@
+[
+  {
+    "id": "recrnzgP4QenhOFDB",
+    "createdTime": "2023-05-30T17:06:12.000Z",
+    "Created": "2023-05-30",
+    "Assignee": {
+      "id": "usrpvesMPv8VZlfGk",
+      "email": "simi@eli.build",
+      "name": "Simi Ibikunle"
+    },
+    "Program Name": "Healthy Homes Program - Alaska",
+    "Description": "Heathy Homes is Alaska Heat Smart’s newest program, facilitating the remediation of up to 90 lower income Juneau family homes between early 2023 and December 2025, or when funding runs out.",
+    "Funder": [
+      "recDKFqCzA9Z9oGH1"
+    ],
+    "Funding Status": "Limited",
+    "Program Administrator": [
+      "recWvpUbaLcqDPCq2"
+    ],
+    "Program Cap": -1,
+    "Program Source URL": "https://akheatsmart.org/healthy-homes/",
+    "Upgrade Measures - Prioritization Only": [
+      "recEMW3KiXMKcsBes",
+      "reczG6Hdel1jFuw5Q"
+    ],
+    "Ingestion Status": "Availability Modeled",
+    "Customer Interest (Overlap)": [
+      "recFTptCyG26rrjKl"
+    ],
+    "Ingestion Due Date": "2023-05-31",
+    "Customers (from Upgrade Measures)": [
+      "recq2Dst1mgksTzqj",
+      "rec6mU7dmw3caYav5",
+      "recFTptCyG26rrjKl",
+      "recmaatV23rfA42Ok",
+      "recRfpBLCFdE7JLd4",
+      "recRfpBLCFdE7JLd4"
+    ],
+    "Customer Overlap (Count)": 1,
+    "Strategic Value (from Customer Interest (Overlap))": [
+      3
+    ],
+    "Customer Strategic Value Average": 3,
+    "Ingestion Priority": 4,
+    "Minimum Ingestion Level (MIL) for Interested Customers": [
+      "Availability"
+    ],
+    "Benefits": [
+      "recNvJ1WS88ivU1OS",
+      "recb4jg1Uwh1E3mjr",
+      "recGCaWFpnCDrdkzq"
+    ],
+    "Benefit Count": 3,
+    "Benefit Type": "No Cost",
+    "Area - Prioritization Only": [
+      "recHPhv0KUmIMWFb2"
+    ],
+    "Availability: Property Type": [
+      "Single Family",
+      "Multifamily"
+    ],
+    "Income Restrictions": [
+      "Availability / Eligibility"
+    ],
+    "Publish": true,
+    "UUID": "ece1903e-1f42-4848-b702-6b7c11cf60a6",
+    "Area": [
+      "recjeXUJqt49iePr3"
+    ],
+    "Escalations": [
+      "recwkS0YzBt0IIjqd"
+    ],
+    "Customers (from Area - Prioritization Only)": [
+      "recFTptCyG26rrjKl"
+    ],
+    "ID": "Alaska/CityandBoroughofJuneau_HealthyHomesProgram-Alaska"
+  }
+]

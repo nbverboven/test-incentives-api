@@ -1,0 +1,35 @@
+[
+  {
+    "id": "3c635b44-8970-4639-842f-3ada20cbc03c",
+    "name": "Healthy Homes Program - Alaska/Electrical Panel Upgrade",
+    "min_amount": null,
+    "max_amount": 100,
+    "program": {
+      "id": "ece1903e-1f42-4848-b702-6b7c11cf60a6",
+      "name": "Healthy Homes Program - Alaska",
+      "program_cap": null
+    }
+  },
+  {
+    "id": "fd0c55de-e965-4f65-8135-0bacef57818b",
+    "name": "Healthy Homes Program - Alaska/Weatherization",
+    "min_amount": null,
+    "max_amount": 100,
+    "program": {
+      "id": "ece1903e-1f42-4848-b702-6b7c11cf60a6",
+      "name": "Healthy Homes Program - Alaska",
+      "program_cap": null
+    }
+  },
+  {
+    "id": "3fd68237-2921-447e-b7a7-9181e6747157",
+    "name": "Healthy Homes Program - Alaska/Air Quality Improvements",
+    "min_amount": null,
+    "max_amount": 100,
+    "program": {
+      "id": "ece1903e-1f42-4848-b702-6b7c11cf60a6",
+      "name": "Healthy Homes Program - Alaska",
+      "program_cap": null
+    }
+  }
+]
