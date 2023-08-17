@@ -1,4 +1,4 @@
-import axios from "axios/index";
+import axios from "axios";
 import {mapAirtableBenefits, mapAirtablePrograms} from "../etl/mappers";
 import {Benefit, Program} from "../utils/types";
 

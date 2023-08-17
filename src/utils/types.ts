@@ -25,6 +25,14 @@ export interface Benefit {
     programId: string;
 }
 
+export interface DenormalizedBenefit {
+    id: string;
+    name: string;
+    minAmount: number | null;
+    maxAmount: number;
+    program: Program;
+}
+
 export interface ApiRequest {
     property_type: ApiPropertyType;
 }

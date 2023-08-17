@@ -1,5 +1,5 @@
 import IncentivesService from "../../src/services/incentives";
-import {Benefit, Program} from "../../src/utils/types";
+import {Benefit, DenormalizedBenefit, Program} from "../../src/utils/types";
 
 describe("IncentiveService tests", () => {
     const program: Program = {
@@ -15,23 +15,18 @@ describe("IncentiveService tests", () => {
         name: "test benefit",
         programId: "1"
     };
-
-    describe("findProgramById", () => {
-        it("should return undefined if there's no program", () => {
-            const service = new IncentivesService([], []);
-            expect(service.findProgramById("1")).toBeUndefined();
-        });
-
-        it("should return undefined if there's no program with a given id", () => {
-            const service = new IncentivesService([program], []);
-            expect(service.findProgramById("2")).toBeUndefined();
-        });
-
-        it("should return the correct program if there's one with a matching id", () => {
-            const service = new IncentivesService([program], []);
-            expect(service.findProgramById("1")).toBe(program);
-        });
-    });
+    const denormalizedBenefit: DenormalizedBenefit = {
+        id: "1",
+        maxAmount: 0,
+        minAmount: null,
+        name: "test benefit",
+        program: {
+            id: "1",
+            name: "test program",
+            cap: null,
+            propertyType: ["single_family", "multifamily"],
+        }
+    };
 
     describe("findBenefitsByPropertyType", () => {
         it("should return an empty list if there aren't any benefits", () => {
@@ -46,7 +41,7 @@ describe("IncentiveService tests", () => {
 
         it("should return the benefits belonging to a program applicable to the given property type", () => {
             const service = new IncentivesService([program], [benefit]);
-            expect(service.findBenefitsByPropertyType("single_family")).toStrictEqual([benefit]);
+            expect(service.findBenefitsByPropertyType("single_family")).toStrictEqual([denormalizedBenefit]);
         })
     });
 });

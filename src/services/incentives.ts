@@ -1,23 +1,35 @@
-import {ApiPropertyType, Benefit, Program} from "../utils/types";
+import {ApiPropertyType, Benefit, DenormalizedBenefit, Program} from "../utils/types";
 
 export default class IncentivesService {
-
-    programsMap: { [id: string]: Program };
-    benefitsMap: { [id: string]: Benefit };
+    benefitsMap: { [id: string]: DenormalizedBenefit };
 
     constructor(programs: Program[], benefits: Benefit[]) {
-        this.programsMap = programs.reduce((acc, curr) => ({...acc, [curr.id]: curr}), {});
-        this.benefitsMap = benefits.reduce((acc, curr) => ({...acc, [curr.id]: curr}), {});
+        const programsMap: { [id: string]: Program } =
+            programs.reduce((acc, curr) => ({...acc, [curr.id]: curr}), {});
+
+        this.benefitsMap = benefits.reduce(
+            (map, benefit) => {
+                const program = programsMap[benefit.programId];
+                const denormalizedBenefit = program ? {
+                    [benefit.id]: {
+                        id: benefit.id,
+                        name: benefit.name,
+                        minAmount: benefit.minAmount,
+                        maxAmount: benefit.maxAmount,
+                        program: {
+                            ...program,
+                        }
+                    }
+                } : {};
+                return {
+                    ...map,
+                    ...denormalizedBenefit
+                };
+            }, {});
     }
 
-    public findBenefitsByPropertyType(propertyType: ApiPropertyType): Benefit[] {
+    public findBenefitsByPropertyType(propertyType: ApiPropertyType): DenormalizedBenefit[] {
         return Object.values(this.benefitsMap)
-            .filter(benefit => {
-                return this.programsMap[benefit.programId]?.propertyType.includes(propertyType);
-            });
-    }
-
-    public findProgramById(id: string): Program | undefined {
-        return this.programsMap[id];
+            .filter(benefit => benefit.program.propertyType.includes(propertyType));
     }
 }
