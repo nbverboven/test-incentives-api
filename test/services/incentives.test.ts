@@ -4,12 +4,14 @@ import {Benefit, DenormalizedBenefit, Program} from "../../src/utils/types";
 describe("IncentiveService tests", () => {
     const program: Program = {
         id: "1",
+        uuid: "dvorak",
         name: "test program",
         cap: null,
         propertyType: ["single_family", "multifamily"],
     };
     const benefit: Benefit = {
         id: "1",
+        uuid: "qwerty",
         maxAmount: 0,
         minAmount: null,
         name: "test benefit",
@@ -17,11 +19,13 @@ describe("IncentiveService tests", () => {
     };
     const denormalizedBenefit: DenormalizedBenefit = {
         id: "1",
+        uuid: "qwerty",
         maxAmount: 0,
         minAmount: null,
         name: "test benefit",
         program: {
             id: "1",
+            uuid: "dvorak",
             name: "test program",
             cap: null,
             propertyType: ["single_family", "multifamily"],

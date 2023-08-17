@@ -13,6 +13,7 @@ export default class IncentivesService {
                 const denormalizedBenefit = program ? {
                     [benefit.id]: {
                         id: benefit.id,
+                        uuid: benefit.uuid,
                         name: benefit.name,
                         minAmount: benefit.minAmount,
                         maxAmount: benefit.maxAmount,

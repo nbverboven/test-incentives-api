@@ -11,6 +11,7 @@ export type ApiPropertyType = "single_family" | "multifamily" | "commercial";
 
 export interface Program {
     id: string;
+    uuid: string;
     name: string;
     cap: number | null;
     propertyType: ApiPropertyType[];
@@ -18,6 +19,7 @@ export interface Program {
 
 export interface Benefit {
     id: string;
+    uuid: string;
     name: string;
     // type: ApiBenefitType;
     minAmount: number | null;
@@ -27,6 +29,7 @@ export interface Benefit {
 
 export interface DenormalizedBenefit {
     id: string;
+    uuid: string;
     name: string;
     minAmount: number | null;
     maxAmount: number;

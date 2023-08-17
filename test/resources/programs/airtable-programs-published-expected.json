@@ -1,6 +1,7 @@
 [
   {
-    "id": "1b560e4a-7077-4bec-817f-be213e6a247f",
+    "id": "recGvYs2YHnRZ4Qj0",
+    "uuid": "1b560e4a-7077-4bec-817f-be213e6a247f",
     "name": "Electrify Riverside Program",
     "cap": null,
     "propertyType": [
@@ -9,7 +10,8 @@
     ]
   },
   {
-    "id": "88a4feee-64c3-4d5f-97de-fc440d48421e",
+    "id": "rec8SNP1Btw4OkvfV",
+    "uuid": "88a4feee-64c3-4d5f-97de-fc440d48421e",
     "name": "Electrify Your Home",
     "cap": 1000,
     "propertyType": [

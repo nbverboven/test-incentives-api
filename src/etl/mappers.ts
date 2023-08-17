@@ -26,7 +26,8 @@ export const mapAirtablePrograms = (programs: AirtableProgram[]): Program[] => {
         }))
         .filter(p => p.Publish)
         .map(p => ({
-            id: p.UUID,
+            id: p.id,
+            uuid: p.UUID,
             name: p["Program Name"],
             cap: (p["Program Cap"] && p["Program Cap"] >= 0) ? p["Program Cap"] : null,
             propertyType: p["Availability: Property Type"]!.map(mapAirtablePropertyType),
@@ -45,7 +46,8 @@ export const mapAirtableBenefits = (benefits: AirtableBenefit[]): Benefit[] => {
         }))
         .filter(b => b.Program && b.Program.length > 0 && b.UUID /* && b["Benefit Type"] */ && b.Amount)
         .map(b => ({
-            id: b.UUID,
+            id: b.id,
+            uuid: b.UUID,
             name: b.ID,
             // type: b["Benefit Type"],
             programId: b.Program![0],

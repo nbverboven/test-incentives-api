@@ -24,7 +24,6 @@ describe("Airtable mappers tests", () => {
 
     describe("Benefits mapper", () => {
         it("should ignore benefits that don't belong to any program", () => {
-            // const benefitsWithoutPrograms = require('../resources/benefits.json')
             const benefitsWithoutPrograms = loadBenefits("airtable-benefits-without-programs.json");
             const benefits = mapAirtableBenefits(benefitsWithoutPrograms);
 
